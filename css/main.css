@@ -114,6 +114,10 @@
   transition-delay: 0.4s;
 }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -228,19 +232,10 @@ main#home h1 {
   border-bottom: #eece1a 5px solid;
 }
 
-.projects {
+.services {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
-}
-.projects img {
-  width: 100%;
-  border: 3px #fff solid;
-}
-.projects img:hover {
-  opacity: 0.5;
-  border-color: #eece1a;
-  transition: all 0.5s ease-out;
 }
 
 .boxes {
@@ -300,13 +295,13 @@ main#home h1 {
 }
 
 @media screen and (min-width: 1171px) {
-  .projects {
+  .services {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
+  .services {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -348,7 +343,7 @@ main#home h1 {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
-  .projects {
+  .services {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -364,7 +359,11 @@ main#home h1 {
     margin-top: 1rem;
     font-size: 5rem;
   }
-  .projects {
+  .services {
     grid-template-columns: 1fr;
   }
+}
+
+.item {
+  text-align: center;
 }
