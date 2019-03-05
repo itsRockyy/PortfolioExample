@@ -118,6 +118,10 @@
   transition-delay: 0.5s;
 }
 
+.nav-item:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -248,7 +252,7 @@ main#home h1 {
 .boxes div {
   font-size: 2rem;
   border: 3px #fff solid;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
 }
@@ -294,11 +298,65 @@ main#home h1 {
   height: 60px;
 }
 
-@media screen and (min-width: 1171px) {
+.links .item {
+  width: 30vw;
+  margin: 0 auto;
+}
+
+#client-base {
+  text-align: left;
+}
+#client-base ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+#client-base ul li::before {
+  content: "\2022";
+  color: #eece1a;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Enquiry Form Styles */
+.enquiry .input-grp {
+  padding: 0.25rem;
+}
+.input-grp label {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 10vw;
+}
+.input-grp textarea {
+  margin: 10px 0px;
+}
+.input-grp textarea,
+.input-grp input {
+  font-size: 1.5rem;
+  color: #eece1a;
+  border: solid 3px #eece1a;
+  padding: 0.25rem;
+  background: transparent;
+}
+.input-grp input {
+  width: 30vw;
+}
+.enquiry button {
+  width: 20vw;
+  background: transparent;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: solid 3px #fff;
+  cursor: pointer;
+  color: #eece1a;
+}
+
+/* @media screen and (min-width: 1171px) {
   .services {
     grid-template-columns: repeat(4, 1fr);
   }
-}
+} */
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .services {
@@ -361,6 +419,23 @@ main#home h1 {
   }
   .services {
     grid-template-columns: 1fr;
+  }
+  .links .item {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .input-grp label {
+    font-size: 1rem;
+    width: 80vw;
+    text-align: left !important;
+  }
+  .input-grp input {
+    width: 80vw;
+    font-size: 1rem;
+  }
+  .enquiry button,
+  textarea {
+    width: 100%;
   }
 }
 

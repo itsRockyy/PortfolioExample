@@ -39,6 +39,11 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="services.html" class="nav-link">
+              Services
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="contact.html" class="nav-link">
               Contact Us
             </a>
@@ -48,61 +53,36 @@
               Important Links
             </a>
           </li>
-          <li class="nav-item">
-            <a href="enquiry.html" class="nav-link">
-              Enquiry
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
 
-    <main id="work">
+    <main id="enquiry">
       <h1 class="lg-heading">
-        Services
-        <span class="text-secondary">Provided</span>
+        Send us an
+        <span class="text-secondary">Enquiry</span>
       </h1>
-      <div class="services">
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Accounting
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Auditing
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Taxation (Income Tax and GST)
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Income Tax and GST Returns
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Project Reports and Budgeting
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Advisory on Financial Structures
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Compliance of Notices
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" class="btn-dark">
-            Various Registrations
-          </a>
-        </div>
+      <div class="enquiry">
+        <form action="/sendEnquiry">
+          <div class="input-grp">
+            <label for="fullName">Full Name: </label>
+            <input type="text" name="fullName" />
+          </div>
+          <div class="input-grp">
+            <label for="email">Email Id: </label>
+            <input type="email" name="email" />
+          </div>
+          <div class="input-grp">
+            <label for="Mobile">Mobile: </label>
+            <input type="tel" name="mobile" />
+          </div>
+          <div class="input-grp">
+            <label for="query">Query: </label>
+            <br />
+            <textarea name="query" cols="50" rows="5"></textarea>
+          </div>
+          <button type="submit">Send your enquiry</button>
+        </form>
       </div>
     </main>
 
